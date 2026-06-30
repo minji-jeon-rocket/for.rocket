@@ -1,15 +1,15 @@
-title: Abhishek Nagekar
-description: Web & Security Engineer
-site_title: '@abhn - Abhishek Nagekar'
+title: Minji Jeon
+description: Amateur Rocket Engineer
+site_title: 'Minji Jeon'
 
 # Build settings
 markdown: kramdown
 exclude: [vendor/ruby]
 
 # Personalization
-github_username: abhn
-blog_url: https://www.nagekar.com
-email: abhishek@nagekar.com
+github_username: jmj
+blog_url: https://www.jmj.com
+email: jminji792gm.gist.ac.kr
 keybase_username: abhn
 twitter_username: abhn_
 reddit_username: abhn
