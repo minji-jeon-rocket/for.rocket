@@ -471,7 +471,6 @@ a {
   justify-content: center; /* 전체 묶음 가로 가운데 */
   gap: 10px 5px; /* row-gap 10px, column-gap 5px */
   width: 100%;
-  margin-bottom: 30px;
 }
 .project-technology {
   border: 1px solid #222;
