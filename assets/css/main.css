@@ -635,3 +635,36 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Skills: make section a bit wider ===== */
+.section.skills{
+  max-width: 960px;   /* 기존 768px보다 살짝 넓게 */
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* (선택) 큰 화면에서 카드도 살짝 넓게 느껴지도록 gap 조정 */
+.skills-cards{
+  gap: 22px;
+}
+
+/* ===== Skillbar hover-fill animation (CSS-only via --percent) ===== */
+
+/* 기본: bar는 0%에서 시작 */
+.skillbar .skillbar-bar{
+  width: 0%;
+  transition: width 900ms ease;
+  will-change: width;
+}
+
+/* 카드에 커서를 올리면, 그 카드 안의 bar들이 각자의 --percent 만큼 채워짐 */
+.skills-card:hover .skillbar .skillbar-bar{
+  width: var(--percent, 0%);
+}
+
+/* (권장) 모션 줄이기 설정 존중 */
+@media (prefers-reduced-motion: reduce){
+  .skillbar .skillbar-bar{
+    transition: none;
+  }
+}
