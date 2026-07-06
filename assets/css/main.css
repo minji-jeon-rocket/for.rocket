@@ -162,12 +162,9 @@ img {
   text-align: center;
 }
 
-.projects-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  grid-gap: 10px;
+.projects-wrapper{
+  flex: 1;         /* 오른쪽 그리드가 남는 공간을 전부 차지 */
+  min-width: 0;    /* 긴 내용 때문에 레이아웃 터지는 것 방지 */
 }
 
 .full-width {
@@ -351,6 +348,42 @@ img {
   border-radius: 3px;
   padding: 5px;
   color: #fff;
+}
+
+/* Projects: left sidebar + right grid */
+.projects-layout{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* left column */
+.projects-sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 제목이 너무 아래로 밀리면 margin 정리 */
+.projects-sidebar .section-heading{
+  margin-bottom: 12px;
+}
+
+/* filter menu: vertical + same width */
+.projects-filter{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;   /* 핵심: 아이템 폭을 동일하게 */
+  gap: 10px;
+  width: 150px;           /* 원하는 동일 폭(사진처럼) */
+}
+
+.projects-filter a,
+.projects-filter button{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
 }
 
 .post-date {
