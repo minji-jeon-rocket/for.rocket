@@ -465,17 +465,13 @@ a {
   margin: 0 5px;
 }
 
-.project-technologies {
-  display: -ms-grid;
+.project-technologies{
   display: grid;
-  -ms-grid-columns: (minmax(120px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  margin: 20px 0;
-  grid-gap: 5px;
-  grid-row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+  justify-content: center; /* 전체 묶음 가로 가운데 */
+  gap: 10px 5px; /* row-gap 10px, column-gap 5px */
   width: 100%;
 }
-
 .project-technology {
   border: 1px solid #222;
   border-radius: 2px;
