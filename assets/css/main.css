@@ -9,6 +9,17 @@ img {
   max-height: 100%;
 }
 
+/* hover lift animation for experience card */
+.experience-card{
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  will-change: transform;
+}
+
+.experience-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
 .head {
 
   color: #fff;
