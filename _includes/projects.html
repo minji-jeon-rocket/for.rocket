@@ -1,19 +1,23 @@
 <div class="section-wrapper">
-    <section class="section projects" id="projects">
-        <div class="full-width">
-            <div class="section-heading" id="featured-projects-text">Projects</div></div>
-            
-                <div class="project-technologies">
+  <section class="section projects" id="projects">
+    <div class="full-width projects-layout">
+      
+      <!-- LEFT: title + menu (vertical) -->
+      <div class="projects-sidebar">
+        <div class="section-heading" id="featured-projects-text">Projects</div>
 
-                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">All</a>
-                    <a id="extra" class="semi-transparent-button with-border white-button" onclick="selected('extra')">ExtraCurricular</a>
-                    <a id="course" class="semi-transparent-button with-border white-button" onclick="selected('course')">CourseWork</a>
-
-                </div>
-
-            <div class="projects-wrapper">
-            <!-- filled in by js -->
-            </div>
+        <div class="projects-filter">
+          <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">All</a>
+          <a id="extra" class="semi-transparent-button with-border white-button" onclick="selected('extra')">ExtraCurricular</a>
+          <a id="course" class="semi-transparent-button with-border white-button" onclick="selected('course')">CourseWork</a>
         </div>
-    </section>
+      </div>
+
+      <!-- RIGHT: cards grid -->
+      <div class="projects-wrapper">
+        <!-- filled in by js -->
+      </div>
+
+    </div>
+  </section>
 </div>
