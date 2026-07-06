@@ -21,23 +21,22 @@ img {
 }
 
 .head {
-
   color: #fff;
   min-height: 100vh;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 
+  position: relative;
   background: transparent;
 }
 
@@ -61,13 +60,13 @@ img {
 }
 
 @-webkit-keyframes fade-in-down {
-	0% {
-		opacity: 0;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
-	100% {
+  100% {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transform: translateY(0);
@@ -76,13 +75,13 @@ img {
 }
 
 @keyframes fade-in-down {
-	0% {
-		opacity: 0;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
-	100% {
+  100% {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transform: translateY(0);
@@ -133,7 +132,6 @@ img {
 
   grid-column-gap: 10px;
   justify-content: center;
-
   margin: 0 auto;
 }
 
@@ -162,11 +160,6 @@ img {
   text-align: center;
 }
 
-.projects-wrapper{
-  flex: 1;         /* 오른쪽 그리드가 남는 공간을 전부 차지 */
-  min-width: 0;    /* 긴 내용 때문에 레이아웃 터지는 것 방지 */
-}
-
 .full-width {
   width: 100%;
   max-width: 100%;
@@ -179,13 +172,13 @@ img {
   min-height: 100vh;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,17 +245,19 @@ img {
 .skill-grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 
 .projects-grid {
   display: -ms-grid;
@@ -272,6 +267,7 @@ img {
   grid-auto-rows: auto;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
+
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -279,15 +275,19 @@ img {
 
 .footer {
   background-color: #444;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   min-height: 35px;
   color: #fff;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
@@ -320,12 +320,15 @@ img {
   font-size: 1.25rem;
   font-family: Arial, sans-serif;
   margin: 10px 0 20px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -348,42 +351,6 @@ img {
   border-radius: 3px;
   padding: 5px;
   color: #fff;
-}
-
-/* Projects: left sidebar + right grid */
-.projects-layout{
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-/* left column */
-.projects-sidebar{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* 제목이 너무 아래로 밀리면 margin 정리 */
-.projects-sidebar .section-heading{
-  margin-bottom: 12px;
-}
-
-/* filter menu: vertical + same width */
-.projects-filter{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;   /* 핵심: 아이템 폭을 동일하게 */
-  gap: 10px;
-  width: 150px;           /* 원하는 동일 폭(사진처럼) */
-}
-
-.projects-filter a,
-.projects-filter button{
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  justify-content: center;
 }
 
 .post-date {
@@ -451,12 +418,15 @@ img {
 .experience-details {
   font-size: 20.8px;
   font-size: 1.3rem;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -481,30 +451,79 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+
   margin-top: 80px;
 }
 
-.head-inner-wrap {
-  
-}
+.head-inner-wrap { }
 
 .bottom-link {
   margin: 0 5px;
 }
 
+/* ===== Projects layout (FIXED) ===== */
+.projects-layout{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.projects-sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projects-sidebar .section-heading{
+  margin-bottom: 12px;
+}
+
+/* ✅ filter menu: vertical + same width */
+.projects .projects-filter{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 150px;
+}
+
+.projects .projects-filter a,
+.projects .projects-filter button{
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ✅ right cards grid: always grid on desktop */
+.projects-wrapper{
+  flex: 1;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* ===== Technology tags grid (keep for tags, not for filter menu) ===== */
 .project-technologies{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
-  justify-content: center; /* 전체 묶음 가로 가운데 */
-  gap: 10px 5px; /* row-gap 10px, column-gap 5px */
+  justify-content: center;
+  gap: 10px 5px;
   width: 100%;
 }
+
 .project-technology {
   border: 1px solid #222;
   border-radius: 2px;
@@ -512,17 +531,11 @@ a {
   padding: 3px 5px;
 }
 
-.project-technology:first-child {
-  margin-left: 0px;
-}
-
-.project-technology:last-child {
-  margin-right: 0px;
-}
+.project-technology:first-child { margin-left: 0px; }
+.project-technology:last-child { margin-right: 0px; }
 
 /* Here follow all the media queries */
 @media screen and (max-width: 850px) {
-
   .section {
     padding-left: 15px;
     padding-right: 15px;
@@ -541,7 +554,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-
   .head-menu-wrap {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -550,9 +562,7 @@ a {
     width: 80%;
   }
 
-  #nav {
-    background-attachment: unset;
-  }
+  #nav { background-attachment: unset; }
 
   .head-title {
     display: block;
@@ -560,9 +570,7 @@ a {
     font-size: 2.75rem;
   }
   
-  .head-punchline {
-    text-align: center;
-  }
+  .head-punchline { text-align: center; }
 
   .skills-grid {
     -ms-grid-columns: 100%;
@@ -571,9 +579,8 @@ a {
         grid-template-rows: auto auto;
   }
 
-  .set-size {
-    font-size: 8em;
-  }
+  .set-size { font-size: 8em; }
+
   .pie-wrapper .label {
     font-size: 0.9rem;
     top: 3rem;
@@ -584,55 +591,14 @@ a {
         grid-template-columns: auto;
   }
 
-  .projects-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    grid-gap: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  /* ✅ Projects on mobile: stack & 1-column cards */
+  .projects-layout{ flex-direction: column; }
+  .projects .projects-filter{ width: 100%; max-width: 220px; }
+  .projects-wrapper{ grid-template-columns: 1fr; justify-content: center; }
 }
 
-/* ✅ Projects 메뉴( All / ExtraCurricular / CourseWork ) 중앙 정렬 */
-.projects-menu,
-.project-menu,
-.projects-filter,
-.project-filter,
-#projects-menu,
-#project-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;          /* 메뉴 간격 */
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* a 태그/버튼이 inline이라 정렬이 애매하면 block/flex로 안정화 */
-.projects-menu a,
-.project-menu a,
-.projects-filter a,
-.project-filter a,
-#projects-menu a,
-#project-menu a,
-.projects-menu button,
-.project-menu button,
-.projects-filter button,
-.project-filter button,
-#projects-menu button,
-#project-menu button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 @media screen and (max-height: 450px) and (max-width: 600px) {
-  .head {
-    min-height: 525px;
-  }
+  .head { min-height: 525px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -645,21 +611,48 @@ a {
 }
 
 @media screen and (max-height: 525px) {
+  .head { min-height: 500px; }
+  .head-menu-wrap { bottom: 15px; }
+}
 
-  .head {
-    min-height: 500px;
-  }
+/* ✅ Projects 메뉴( All / ExtraCurricular / CourseWork ) 중앙 정렬
+   - 주의: .projects-filter는 세로정렬이 목적이라 여기 포함하면 충돌!
+*/
+.projects-menu,
+.project-menu,
+.project-filter,
+#projects-menu,
+#project-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .head-menu-wrap {
-    bottom: 15px;
-  }
+/* a 태그/버튼이 inline이라 정렬이 애매하면 block/flex로 안정화 */
+.projects-menu a,
+.project-menu a,
+.project-filter a,
+#projects-menu a,
+#project-menu a,
+.projects-menu button,
+.project-menu button,
+.project-filter button,
+#projects-menu button,
+#project-menu button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ===== Skills cards layout ===== */
 .skills-cards{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px; /* (기존 18px -> 22px) */
   align-items: start;
 }
 
@@ -671,31 +664,22 @@ a {
 
 /* ===== Skills: make section a bit wider ===== */
 .section.skills{
-  max-width: 960px;   /* 기존 768px보다 살짝 넓게 */
+  max-width: 960px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* (선택) 큰 화면에서 카드도 살짝 넓게 느껴지도록 gap 조정 */
-.skills-cards{
-  gap: 22px;
-}
-
 /* ===== Skillbar hover-fill animation (CSS-only via --percent) ===== */
-
-/* 기본: bar는 0%에서 시작 */
 .skillbar .skillbar-bar{
   width: 0%;
   transition: width 900ms ease;
   will-change: width;
 }
 
-/* 카드에 커서를 올리면, 그 카드 안의 bar들이 각자의 --percent 만큼 채워짐 */
 .skills-card:hover .skillbar .skillbar-bar{
   width: var(--percent, 0%);
 }
 
-/* (권장) 모션 줄이기 설정 존중 */
 @media (prefers-reduced-motion: reduce){
   .skillbar .skillbar-bar{
     transition: none;
