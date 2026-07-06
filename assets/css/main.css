@@ -681,3 +681,31 @@ a {
 .skills-card .progress-bars{
   margin-top: 0;
 }
+
+  <!-- ... your page content ... -->
+
+  <script>
+    (function () {
+      const skillbars = document.querySelectorAll(".skillbar");
+      skillbars.forEach(sb => {
+        const bar = sb.querySelector(".skillbar-bar");
+        if (bar) bar.style.width = "0%";
+      });
+
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const sb = entry.target;
+          const bar = sb.querySelector(".skillbar-bar");
+          const percent = sb.getAttribute("data-percent") || "0%";
+          requestAnimationFrame(() => {
+            if (bar) bar.style.width = percent;
+          });
+          observer.unobserve(sb);
+        });
+      }, { threshold: 0.25 });
+
+      skillbars.forEach(sb => io.observe(sb));
+    })();
+  </script>
+</body>
